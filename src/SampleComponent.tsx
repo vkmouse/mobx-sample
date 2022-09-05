@@ -9,7 +9,7 @@ interface IProps {
 @inject('sampleStore')
 @observer
 class SampleComponent extends React.Component<IProps> {
-  static defaultProps = {} as IProps;
+  static defaultProps = {} as IProps; // close the validation of props in development
 
   render() {
     return (
