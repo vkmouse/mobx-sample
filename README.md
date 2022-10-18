@@ -1,6 +1,6 @@
 ### SampleStore.ts
 
-```
+```javascript
 export default class SampleStore {
   @observable value = 0;
 
@@ -16,7 +16,7 @@ export default class SampleStore {
 
 ### RootStore.ts
 
-```
+```javascript
 class RootStore {
   private sampleStore: SampleStore = new SampleStore();
 }
@@ -24,7 +24,7 @@ class RootStore {
 
 ### SampleComponent.ts
 
-```
+```javascript
 interface IProps {
   sampleStore: SampleStore
 }
@@ -46,7 +46,7 @@ class SampleComponent extends React.Component<IProps> {
 ```
 
 ### App.ts
-```
+```javascript
 function App () {
   const rootStore = new RootStore();
   return (
